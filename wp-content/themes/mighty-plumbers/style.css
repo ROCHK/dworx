@@ -1,0 +1,946 @@
+/*
+Theme Name: Mighty Plumbers
+Theme URI: https://cozythemes.com/mighty-plumbers-wordpress-theme/
+Author: CozyThemes
+Author URI: https://cozythemes.com/
+Description: Mighty Plumbers is a dynamic and highly customizable WordPress theme perfect for plumbing service agencies and versatile enough for any home services niche, including handyman, electrician, HVAC, gardening, construction, and contracting businesses. Featuring full site editing with an intuitive drag-and-drop builder, it offers unlimited design possibilities from scratch. With over 15 pre-built homepage sections for quick and easy setup, this theme saves you time while providing a professional look. Mighty Plumbers is user-friendly, responsive, and SEO-friendly, ensuring your website stands out and attracts more clients with its polished and impactful design. Explore demos and more details about Mighty Plumbers - at https://cozythemes.com/mighty-plumbers-wordpress-theme/.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, e-commerce, full-site-editing, block-patterns, full-width-template, rtl-language-support, threaded-comments, translation-ready, block-styles, wide-blocks
+Version: 1.0.0
+Requires at least: 5.9
+Tested up to: 6.5
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mighty-plumbers
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+.wp-block-comments textarea#comment {
+  border-radius: 4px;
+}
+input[type="submit"] {
+  transition: all ease 0.23s;
+  -o-transition: all ease 0.23s;
+  -moz-transition: all ease 0.23s;
+  -webkit-transition: all ease 0.23s;
+}
+
+.wpcf7-form-control.wpcf7-text,
+.wpcf7-form-control.wpcf7-textarea,
+.wpcf7-form-control.wpcf7-number.wpcf7-validates-as-number,
+.wpcf7-form-control.wpcf7-select {
+  border-radius: 5px;
+  border: 1px solid #dad7d7;
+  padding: 15px;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+.wpcf7-form-control.wpcf7-select {
+  appearance: none;
+  position: relative;
+}
+.wpcf7-form-control.wpcf7-select:after {
+  content: ">";
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+form.wpcf7-form *::placeholder {
+  font-size: 14px;
+}
+form.wpcf7-form *::-moz-placeholder {
+  font-size: 14px;
+}
+form.wpcf7-form *::-webkit-input-placeholder {
+  font-size: 14px;
+}
+.wp-block-contact-form-7-contact-form-selector .wpcf7-form-control.wpcf7-submit {
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--light-color);
+  border-radius: 0;
+  border: 0;
+  font-size: 16px;
+  padding: 15px 40px;
+}
+.wp-block-contact-form-7-contact-form-selector .wpcf7-form-control.has-spinner.wpcf7-submit:hover {
+  background: var(--wp--preset--color--secondary);
+  color: var(--wp--preset--color--light-color);
+}
+.wp-block-contact-form-7-contact-form-selector .wpcf7-form input,
+.wp-block-contact-form-7-contact-form-selector .wpcf7-form select,
+.wp-block-contact-form-7-contact-form-selector .wpcf7-form textarea {
+  border-radius: 0;
+  border: 1px solid var(--wp--preset--color--foreground);
+  background: transparent;
+}
+.wp-block-contact-form-7-contact-form-selector.mighty-plumbers-newsletter .wpcf7-form input {
+  border-radius: 0;
+  border: 0;
+  border: 1px solid var(--wp--preset--color--light-color);
+  background: transparent;
+}
+.wp-block-contact-form-7-contact-form-selector.mighty-plumbers-newsletter.minimal-footer-layout .wpcf7-form input {
+  border-color: var(--wp--preset--color--foreground);
+  color: var(--wp--preset--color--foreground);
+  border-radius: 4px;
+  font-size: 16px;
+}
+.wp-block-contact-form-7-contact-form-selector.mighty-plumbers-newsletter.minimal-footer-layout span.wpcf7-form-control-wrap input.wpcf7-email::placeholder {
+  color: var(--wp--preset--color--foreground);
+  font-size: 16px;
+}
+form.comment-form {
+  border-radius: 20px;
+  margin-top: 24px;
+}
+.wp-block-post-comments-form {
+  border-radius: 20px;
+}
+form.comment-form input[type="email"],
+form.comment-form input[type="text"],
+form.comment-form input[type="url"],
+form.comment-form textarea {
+  border-radius: 5px;
+  margin: 12px 0 25px;
+}
+form.comment-form .form-submit.wp-block-button {
+  margin-top: 25px;
+}
+.wp-block-comment-author-name {
+  font-weight: 600;
+}
+
+.wp-block-comment-date a {
+  color: var(--wp--preset--color--foreground);
+  font-size: 13px;
+}
+.wp-block-comment-template li {
+  margin-top: 50px;
+}
+.wp-block-comment-template li li {
+  margin-top: 10px;
+  padding-left: 60px;
+}
+a.comment-reply-link {
+  border: 1px solid;
+  padding: 5px 13px;
+  border-radius: 40px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+.wp-block-post-comments-form {
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
+}
+.woocommerce ul.products li.product a img {
+  border-radius: 5px;
+  height: 350px;
+  object-fit: cover;
+}
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  margin: 0 2.5% 2.992em 0;
+  width: 23.1%;
+}
+.woocommerce ul.products li.last,
+.woocommerce-page ul.products li.last {
+  margin-right: 0;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  border-radius: 0;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active:before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li:before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active:after {
+  display: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li:after {
+  border: 0;
+}
+.woocommerce #reviews #comments ol.commentlist {
+  padding: 0;
+  margin-top: 20px !important;
+}
+.woocommerce-page .input-text {
+  padding: 11px 30px;
+  border: 1px solid #817e7e;
+  border-radius: 5px;
+}
+.wp-block-post-excerpt__excerpt a,
+.entry-content.wp-block-post-content a,
+p a {
+  text-decoration: underline;
+}
+nav.wp-block-navigation ul li a:hover {
+  color: var(--wp--preset--color--secondary) !important;
+}
+.wp-block-group.mighty-plumbers-product-image {
+  position: relative;
+  overflow: hidden;
+}
+.wp-block-group.mighty-plumbers-product-image .wc-block-components-product-image {
+  margin: 0;
+}
+.wp-block-columns.mighty-plumbers-product-buttons {
+  position: absolute;
+  width: 80%;
+  bottom: -40px;
+  left: 10%;
+  transition: all ease 0.23s;
+  opacity: 0;
+}
+.wp-block-group.mighty-plumbers-product-box:hover .wp-block-columns.mighty-plumbers-product-buttons {
+  opacity: 1;
+  bottom: 24px;
+}
+.wp-block-group.mighty-plumbers-product-box .wc-block-components-product-sale-badge,
+.wp-block-woocommerce-empty-cart-block .wc-block-grid__product-onsale {
+  font-size: 12px;
+  background: var(--wp--preset--color--light-color);
+  color: var(--wp--preset--color--primary);
+  border: 0;
+  top: 12px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  z-index: 1;
+}
+.wp-block-group.mighty-plumbers-product-box .wc-block-components-product-sale-badge.wc-block-components-product-sale-badge--align-left {
+  left: 12px;
+}
+.wp-block-woocommerce-product-sale-badge.mighty-plumbers-sales-bade .wc-block-components-product-sale-badge {
+  right: 12px;
+  position: absolute;
+}
+.wp-block-group.mighty-plumbers-product-box .wc-block-components-product-sale-badge.wc-block-components-product-sale-badge--align-right {
+  right: 12px;
+}
+.wp-block-group.mighty-plumbers-product-box .wp-block-group.mighty-plumbers-product-image img {
+  transition: all ease 0.23s;
+}
+
+.wp-block-group.mighty-plumbers-product-box:hover .wp-block-group.mighty-plumbers-product-image {
+  transform: translateY(-7px);
+}
+.wp-block-group.mighty-plumbers-product-box .wc-block-components-product-price del {
+  color: var(--wp--preset--color--primary);
+}
+.wp-block-group.mighty-plumbers-product-box .wc-block-components-product-price ins {
+  text-decoration: none;
+}
+.wp-block-group.mighty-plumbers-product-box .wp-block-woocommerce-product-price {
+  margin-block-start: 0;
+}
+.wc-block-grid__product-rating .wc-block-grid__product-rating__stars:before {
+  color: var(--wp--preset--color--meta-color);
+}
+.wc-block-grid__product-rating .wc-block-grid__product-rating__stars span:before,
+.woocommerce .star-rating::before,
+.woocommerce .star-rating span::before,
+.wc-block-grid__product-rating .star-rating span:before,
+.wc-block-grid__product-rating .wc-block-grid__product-rating__stars span:before {
+  color: var(--wp--preset--color--secondary);
+}
+.wp-block-group.mighty-plumbers-product-box a.wp-block-read-more,
+.wp-block-group.mighty-plumbers-product-box a.wp-block-button__link.wp-element-button.wc-block-components-product-button__button,
+.wp-block-group.mighty-plumbers-product-box button.wp-block-button__link.wp-element-button.wc-block-components-product-button__button.add_to_cart_button {
+  width: 100%;
+  text-align: center;
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--light-color);
+  padding: 12px 0;
+  font-size: 14px;
+  border-radius: 30px;
+}
+.wp-block-group.mighty-plumbers-product-box a.wp-block-read-more:hover,
+.wp-block-group.mighty-plumbers-product-box a.wp-block-button__link.wp-element-button.wc-block-components-product-button__button:hover,
+.wp-block-group.mighty-plumbers-product-box button.wp-block-button__link.wp-element-button.wc-block-components-product-button__button.add_to_cart_button:hover {
+  background: var(--wp--preset--color--secondary);
+}
+@keyframes mightyplumbers-BrandScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.wp-block-group.mighty-plumbers-brand-showcase {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+figure.wp-block-gallery.mighty-plumbers-brands {
+  animation: mightyplumbersBrandScroll 30s linear infinite;
+  -webkit-animation: mightyplumbersBrandScroll 30s linear infinite;
+  -moz-animation: mightyplumbersBrandScroll 30s linear infinite;
+  flex-wrap: nowrap;
+  animation-play-state: running;
+}
+
+.wp-block-group.mighty-plumbers-brand-showcase:hover figure.wp-block-gallery.mighty-plumbers-brands {
+  animation-play-state: paused;
+}
+figure.wp-block-gallery.mighty-plumbers-brands figure.wp-block-image {
+  width: 240px !important;
+  width: auto;
+  height: auto;
+  max-height: 80px !important;
+  margin: 0 30px !important;
+}
+figure.wp-block-gallery.mighty-plumbers-brands figure.wp-block-image img {
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  transition: all ease 0.23s;
+}
+figure.wp-block-gallery.mighty-plumbers-brands figure.wp-block-image img:hover {
+  transform: scale(1.1);
+}
+.wp-block-cover.mighty-plumbers-cover-hover {
+  background: #000;
+}
+.wp-block-cover.mighty-plumbers-cover-hover:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  opacity: 0.35;
+  -webkit-opacity: 0.35;
+  -moz-opacity: 0.35;
+}
+.wp-block-cover.mighty-plumbers-cover-hover.opacity-none:hover img {
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+}
+.wp-block-group.mighty-plumbers-product-cats {
+  transition: all ease 0.23s;
+}
+.wp-block-group.mighty-plumbers-product-cats:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+}
+.wp-block-contact-form-7-contact-form-selector.mighty-plumbers-newsletter form.wpcf7-form {
+  position: relative;
+}
+.wp-block-contact-form-7-contact-form-selector.mighty-plumbers-newsletter span.wpcf7-form-control-wrap {
+  width: 100%;
+  float: left;
+}
+.wp-block-contact-form-7-contact-form-selector.mighty-plumbers-newsletter input.wpcf7-form-control.wpcf7-submit:hover {
+  background: var(--wp--preset--color--secondary);
+}
+.wp-block-contact-form-7-contact-form-selector.mighty-plumbers-newsletter input.wpcf7-form-control.wpcf7-submit {
+  margin-top: 10px;
+  background: var(--wp--preset--color--primary);
+  height: 50px;
+  position: absolute;
+  right: 8px;
+  padding: 0 30px;
+  color: #fff;
+  top: 8px;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  border-radius: 0;
+}
+.wp-block-contact-form-7-contact-form-selector.mighty-plumbers-newsletter span.wpcf7-form-control-wrap input {
+  height: 65px;
+  padding: 0 20px;
+  color: #fff;
+  transition: all ease 0.23s;
+}
+.wp-block-contact-form-7-contact-form-selector.mighty-plumbers-newsletter span.wpcf7-form-control-wrap input:focus {
+  padding-left: 20px;
+}
+.wp-block-contact-form-7-contact-form-selector.mighty-plumbers-newsletter span.wpcf7-form-control-wrap input::placeholder {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+.mighty-plumbers-nav-search.wp-block-search .wp-block-search__inside-wrapper {
+  justify-content: end;
+}
+.mighty-plumbers-nav-search.wp-block-search .wp-block-search__inside-wrapper svg {
+  height: 34px;
+  width: 34px;
+}
+.mighty-plumbers-nav-search.wp-block-search .wp-block-search__button {
+  padding-right: 30px;
+}
+.wp-block-woocommerce-customer-account a .wc-block-customer-account__account-icon {
+  width: 21px;
+  height: 21px;
+}
+.mighty-plumbers-navigation.wp-block-navigation ul.wp-block-navigation__submenu-container.wp-block-navigation-submenu {
+  padding: 0;
+  border: 0;
+  transition: all ease 0.23s;
+  transform: translateY(40px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.23);
+}
+.mighty-plumbers-navigation.wp-block-navigation li:hover ul.wp-block-navigation__submenu-container.wp-block-navigation-submenu {
+  transform: translateY(0px);
+}
+.wp-block-navigation.mighty-plumbers-navigation .wp-block-navigation-item__content.wp-block-navigation-item__content {
+  line-height: 50px;
+}
+.mighty-plumbers-navigation.wp-block-navigation ul.wp-block-navigation__submenu-container.wp-block-navigation-submenu .wp-block-navigation-item__content.wp-block-navigation-item__content {
+  line-height: 30px;
+  transition: all ease 0.23s;
+}
+.mighty-plumbers-navigation.wp-block-navigation ul.wp-block-navigation__submenu-container.wp-block-navigation-submenu .wp-block-navigation-item__content.wp-block-navigation-item__content:hover {
+  background-color: #ededed;
+}
+.woocommerce.wc-block-catalog-sorting select.orderby {
+  height: 30px;
+  border: 0;
+}
+.wc-block-product-categories.mighty-plumbers-products-category-filter ul.wc-block-product-categories-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wc-block-product-categories.mighty-plumbers-products-category-filter ul.wc-block-product-categories-list li {
+  margin-bottom: 7px;
+}
+.wc-block-product-categories.mighty-plumbers-products-category-filter ul.wc-block-product-categories-list li a:hover span.wc-block-product-categories-list-item__name {
+  color: var(--wp--preset--color--primary);
+}
+.woocommerce .wp-block-woocommerce-product-image-gallery {
+  max-width: 100%;
+}
+.woocommerce .wp-block-woocommerce-product-image-gallery span.onsale {
+  left: 10px;
+  right: unset;
+  z-index: 1;
+  top: 10px;
+  background: var(--wp--preset--color--primary);
+  font-size: 14px;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  background-color: transparent;
+  border: 0;
+  margin: 0 30px 0 0;
+  padding: 0;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+  display: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  padding: 0;
+  border-width: 0;
+  position: relative;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+  color: var(--wp--preset--color--heading-color);
+  font-weight: 600;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+  padding: 16px 0;
+  font-weight: 400;
+  position: relative;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a:after,
+.woocommerce div.product .woocommerce-tabs ul.tabs:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background: var(--wp--preset--color--heading-color);
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs:after {
+  background-color: var(--wp--preset--color--border-color);
+}
+.woocommerce-tabs.wc-tabs-wrapper h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+button.single_add_to_cart_button.button.alt.wp-element-button,
+.wc-block-cart__submit.wp-block-woocommerce-proceed-to-checkout-block a.components-button.wc-block-components-button,
+a.components-button.wc-block-components-button.wp-element-button.wp-block-woocommerce-mini-cart-checkout-button-block.wc-block-mini-cart__footer-checkout.contained {
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--light-color);
+  padding: 15px 60px;
+}
+button.single_add_to_cart_button.button.alt.wp-element-button:hover,
+.wc-block-cart__submit.wp-block-woocommerce-proceed-to-checkout-block a.components-button.wc-block-components-button:hover,
+a.components-button.wc-block-components-button.wp-element-button.wp-block-woocommerce-mini-cart-checkout-button-block.wc-block-mini-cart__footer-checkout.contained:hover {
+  background: var(--wp--preset--color--secondary);
+}
+.woocommerce div.product form.cart div.quantity .qty {
+  background: #f3f3f3;
+  border: 0;
+  padding: 14px 40px;
+  font-size: 20px;
+}
+.wp-block-woocommerce-cart-order-summary-block,
+.wp-block-woocommerce-checkout-order-summary-block {
+  background: var(--wp--preset--color--background-alt);
+  padding: 24px;
+  border-radius: 20px;
+}
+.wc-block-cart__submit.wp-block-woocommerce-proceed-to-checkout-block {
+  margin-top: 24px;
+}
+.wc-block-cart-item__wrap a.wc-block-components-product-name {
+  color: var(--wp--preset--color--heading-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+.wc-block-cart-item__wrap a.wc-block-components-product-name:hover {
+  color: var(--wp--preset--color--secondary);
+}
+span.wc-block-formatted-money-amount.wc-block-components-formatted-money-amount.wc-block-components-product-price__value,
+.wc-block-components-totals-item.wc-block-mini-cart__footer-subtotal span.wc-block-components-totals-item__label,
+.wc-block-components-totals-item.wc-block-mini-cart__footer-subtotal span.wc-block-formatted-money-amount.wc-block-components-formatted-money-amount.wc-block-components-totals-item__value {
+  font-weight: 600;
+  color: var(--wp--preset--color--heading-color);
+}
+.wc-block-components-totals-wrapper {
+  border-top: 0;
+}
+.wc-block-components-order-summary .wc-block-components-order-summary-item__quantity {
+  background: #000;
+  color: #fff;
+}
+figure.wp-block-image.mighty-plumbers-app-image img {
+  margin-top: -105px;
+}
+.wp-block-button.mighty-plumbers-more-products a.wp-element-button:hover {
+  border-bottom-color: var(--wp--preset--color--secondary) !important;
+}
+button.components-button.wc-block-components-button.wp-element-button.wc-block-components-checkout-place-order-button {
+  color: #fff;
+}
+form.comment-form .form-submit.wp-block-button input#submit {
+  color: #fff;
+  padding: 16px 30px;
+}
+.wp-block-post-comments-form input:not([type="submit"]),
+.wp-block-post-comments-form textarea {
+  border-color: var(--wp--preset--color--foreground);
+}
+.wp-block-button.mighty-plumbers-cat-more a.wp-block-button__link {
+  width: 40px;
+  height: 40px;
+  text-indent: -5000px;
+  padding: 0;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.wp-block-button.mighty-plumbers-cat-more a.wp-block-button__link:after {
+  content: "";
+  width: 10px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 7px 0 7px 11px;
+  border-color: transparent transparent transparent var(--wp--preset--color--primary);
+  transform: rotate(0deg);
+  position: absolute;
+  left: 16px;
+  top: 14px;
+}
+.wp-block-button.mighty-plumbers-cat-more a.wp-block-button__link:hover:after {
+  border-color: transparent transparent transparent var(--wp--preset--color--light-color);
+}
+.wp-block-cover.mighty-plumbers-category-box:hover .wp-block-button.mighty-plumbers-cat-more a.wp-block-button__link {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+.wc-block-cart-items.wp-block-woocommerce-cart-line-items-block td.wc-block-cart-item__image {
+  padding: 16px 0 !important;
+}
+.wc-block-cart-items.wp-block-woocommerce-cart-line-items-block td.wc-block-cart-item__image img {
+  border-radius: 12px;
+}
+.wc-block-components-order-summary .wc-block-components-order-summary-item__image img {
+  border-radius: 4px;
+}
+.wpcf7 form .wpcf7-response-output {
+  margin: 0;
+  padding: 5px 10px;
+  border: 1px solid #00a0d2;
+}
+.wp-block-group.mighty-plumbers-sticky-menu {
+  transition: all ease 0.23s;
+}
+.wp-block-group.mighty-plumbers-sticky-menu.sticky-menu-enabled {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  padding: 5px 30px;
+  border-radius: 0;
+  z-index: 999;
+  max-width: 100%;
+  left: 0;
+  right: 0;
+}
+.wp-block-group.mighty-plumbers-sticky-menu.sticky-menu-enabled:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  background: var(--wp--preset--color--dark-shade);
+  top: 0;
+  z-index: 1;
+  opacity: 0.8;
+}
+body.logged-in .wp-block-group.mighty-plumbers-sticky-menu.sticky-menu-enabled {
+  top: 30px;
+}
+.wp-block-group.mighty-plumbers-sticky-menu.sticky-menu-enabled .mighty-plumbers-sticky-navigation {
+  z-index: 2;
+  position: relative;
+}
+.wp-block-button.mighty-plumbers-scrollto-top .wp-block-button__link.wp-element-button {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  display: inline-block;
+  z-index: 999;
+  text-indent: -5000px;
+  display: none;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.089);
+}
+.wp-block-button.mighty-plumbers-scrollto-top .wp-block-button__link.wp-element-button:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  -webkit-mask-image: url(/dworx/wp-content/themes/mighty-plumbers/assets/images/up-arrow.svg);
+  mask-image: url(/dworx/wp-content/themes/mighty-plumbers/assets/images/up-arrow.svg);
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+}
+.wp-block-button.mighty-plumbers-scrollto-top .wp-block-button__link.wp-element-button:hover:after {
+  background-color: var(--wp--preset--color--light-color) !important;
+}
+.woocommerce #reviews #comments ol.commentlist li img.avatar {
+  width: 68px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+  border: 0;
+  background: var(--wp--preset--color--light-shade);
+  margin-left: 80px;
+}
+.wp-block-woocommerce-empty-cart-block .wc-block-grid.wp-block-product-new.wc-block-product-new {
+  margin-top: 20px;
+}
+.wp-block-woocommerce-empty-cart-block h2.wp-block-heading.has-text-align-center {
+  font-size: 30px;
+}
+.wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
+  background-color: var(--wp--preset--color--primary);
+}
+.wp-block-woocommerce-empty-cart-block img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+  height: 340px;
+  border-radius: 20px;
+}
+.wp-block-woocommerce-empty-cart-block .wc-block-grid__products {
+  margin: 0;
+  padding: 0;
+  grid-gap: 32px;
+}
+.wp-block-woocommerce-empty-cart-block .wc-block-grid__products li.wc-block-grid__product {
+  max-width: 23% !important;
+  border: 0 !important;
+}
+.wp-block-woocommerce-empty-cart-block .wc-block-grid__product-title {
+  font-size: 16px;
+  color: var(--wp--preset--color--heading-color);
+}
+.wp-block-woocommerce-empty-cart-block a:hover .wc-block-grid__product-title {
+  color: var(--wp--preset--color--secondary);
+}
+.wp-block-woocommerce-empty-cart-block a.wp-block-button__link.wp-element-button.add_to_cart_button {
+  color: #fff;
+  padding: 12px 40px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.wc-block-mini-cart__empty-cart-wrapper a.components-button.wc-block-components-button.wc-block-mini-cart__shopping-button {
+  color: #fff;
+  padding: 14px 30px;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation {
+  background: var(--wp--preset--color--light-shade);
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation li {
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #ebefef;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation li a {
+  color: var(--wp--preset--color--heading-color);
+}
+.woocommerce-account .woocommerce-MyAccount-navigation li a:hover {
+  color: var(--wp--preset--color--secondary);
+}
+.woocommerce-account button.woocommerce-Button.button.wp-element-button,
+.wp-element-button,
+.wp-block-button__link {
+  color: #fff;
+}
+.woocommerce-account .woocommerce-MyAccount-content {
+  width: 65%;
+}
+header.woocommerce-Address-title.title h3 {
+  font-size: 20px;
+}
+.woocommerce .col2-set .col-1,
+.woocommerce-page .col2-set .col-1,
+.woocommerce .col2-set .col-2,
+.woocommerce-page .col2-set .col-2 {
+  float: left;
+  width: 100%;
+}
+span.wc-block-mini-cart__badge {
+  color: #fff;
+}
+h2.wc-block-mini-cart__title {
+  font-size: 24px;
+}
+.wp-block-group.mighty-plumbers-nav {
+  margin-bottom: -20px;
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  background: #ddd;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+.wp-block-group.mighty-plumbers-team-box {
+  position: relative;
+}
+.wp-block-group.mighty-plumbers-team-box .wp-block-group.team-name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  clip-path: polygon(0% 0%, 142% 86%, 100% 100%, 0% 100%);
+  background-color: #eb7100cf;
+  height: 150px;
+}
+figure.wp-block-image.mighty-plumbers-reviewer {
+  margin-top: -120px;
+}
+.wp-block-group.mighty-plumbers-team-box figure.wp-block-image {
+  display: block;
+}
+.wp-block-group.mighty-plumbers-team-box figure.wp-block-image img {
+  width: 100%;
+}
+.wp-block-group.mighty-plumbers-team-box .wp-block-cover .wp-block-cover__background {
+  opacity: 0.85 !important;
+}
+.wp-block-cover.mighty-plumbers-portfolio-box .wp-block-cover__inner-container {
+  display: none;
+  transition: all ease 0.23s;
+}
+.wp-block-cover.mighty-plumbers-portfolio-box.wp-block has-child-selected .wp-block-cover__inner-container {
+  display: block;
+}
+.wp-block-cover.mighty-plumbers-portfolio-box span.wp-block-cover__background {
+  transition: all ease 0.23s;
+}
+
+.wp-block-cover.mighty-plumbers-portfolio-box:hover span.wp-block-cover__background {
+  opacity: 0.93;
+}
+.wp-block-cover.mighty-plumbers-portfolio-box:hover .wp-block-cover__inner-container {
+  display: block;
+}
+.wp-block-cover.mighty-plumbers-portfolio-box:hover img.wp-block-cover__image-background,
+.wp-block-cover.mighty-plumbers-post-cover:hover img.wp-block-cover__image-background {
+  transform: scale(1.1);
+}
+ul.wp-block-social-links.mighty-plumbers-social-profile .wp-social-link svg {
+  width: 20px;
+  height: 20px;
+}
+ul.wp-block-social-links.mighty-plumbers-social-profile a.wp-block-social-link-anchor:hover {
+  background: var(--wp--preset--color--secondary);
+  border-radius: 50%;
+}
+ul.wp-block-social-links.mighty-plumbers-social-profile a.wp-block-social-link-anchor:hover svg {
+  fill: #fff;
+}
+figure.wp-block-image.size-full.is-resized.envelope-icon,
+figure.wp-block-image.size-full.is-resized.phone-icon {
+  margin-top: -7px;
+}
+.wp-block-group.service-box figure.wp-block-image.service-icon {
+  transition: all ease 0.23s;
+}
+.wp-block-group.service-box:hover figure.wp-block-image.service-icon {
+  transform: rotate(360deg);
+}
+figure.wp-block-image.service-icon {
+  margin-top: -56px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+.wp-block-columns.overlap-columns {
+  margin-top: -100px;
+  z-index: 2;
+  position: relative;
+}
+.wp-block-group.hover-animated-bg {
+  position: relative;
+}
+.wp-block-group.hover-animated-bg:before {
+  content: "";
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: var(--wp--preset--color--secondary);
+  transition: all 0.3s ease-in-out;
+}
+.wp-block-group.hover-animated-bg:hover:before {
+  height: 100%;
+}
+.wp-block-group.hover-animated-bg figure.wp-block-image,
+.wp-block-group.hover-animated-bg .wp-block-heading,
+.wp-block-group.hover-animated-bg p {
+  position: relative;
+}
+.wp-block-group.hover-animated-bg:hover .wp-block-heading,
+.wp-block-group.hover-animated-bg:hover p {
+  color: #fff !important;
+}
+.wp-block-group.hover-animated-bg:hover figure.wp-block-image img {
+  filter: invert(1) brightness(50);
+  -webkit-filter: invert(1) brightness(50);
+}
+figure.wp-block-image.reviews-quote {
+  margin-bottom: -105px;
+}
+.wp-block-contact-form-7-contact-form-selector.mighty-plumbers-newsletter-box input.wpcf7-form-control.wpcf7-email {
+  background: var(--wp--preset--color--light-shade);
+  border: 0;
+  height: 50px;
+  border-radius: 5px;
+}
+.wp-block-contact-form-7-contact-form-selector.mighty-plumbers-newsletter-box input.wpcf7-form-control.wpcf7-submit,
+.wp-block-contact-form-7-contact-form-selector.banner-quote-form input.wpcf7-form-control.wpcf7-submit {
+  background: var(--wp--preset--color--secondary);
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.wp-block-contact-form-7-contact-form-selector.mighty-plumbers-newsletter-box input.wpcf7-form-control.wpcf7-submit:hover,
+.wp-block-contact-form-7-contact-form-selector.banner-quote-form input.wpcf7-form-control.wpcf7-submit:hover {
+  background: var(--wp--preset--color--primary);
+}
+.wp-block-contact-form-7-contact-form-selector.banner-quote-form input.wpcf7-form-control,
+.wp-block-contact-form-7-contact-form-selector.banner-quote-form textarea,
+.wp-block-contact-form-7-contact-form-selector.banner-quote-form select {
+  border-radius: 0;
+  background: var(--wp--preset--color--dark-shade);
+  border: 0;
+  height: 50px;
+  margin-bottom: 5px;
+}
+.wp-block-contact-form-7-contact-form-selector.banner-quote-form input.wpcf7-form-control.wpcf7-submit {
+  border-radius: 0;
+  margin-top: 0;
+}
+.wp-block-contact-form-7-contact-form-selector.banner-quote-form textarea {
+  height: 140px;
+}
+.wp-block-cover.mighty-plumbers-portfolio-box .wp-block-buttons.portfolio-more-icon .wp-block-button a {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 60px;
+  height: 60px;
+  text-indent: -5000px;
+  opacity: 0;
+  transition: all 0.23s ease;
+  display: inline-block;
+}
+.wp-block-cover.mighty-plumbers-portfolio-box .wp-block-buttons.portfolio-more-icon .wp-block-button a:hover {
+  transform: translateY(-5px);
+}
+.wp-block-cover.mighty-plumbers-portfolio-box .wp-block-buttons.portfolio-more-icon .wp-block-button a:before {
+  content: "";
+  -webkit-mask-image: url(/dworx/wp-content/themes/mighty-plumbers/assets/images/upward-arrow.svg);
+  mask-image: url(/dworx/wp-content/themes/mighty-plumbers/assets/images/upward-arrow.svg);
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-color: #d22727;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wp-block-cover.mighty-plumbers-portfolio-box:hover .wp-block-buttons.portfolio-more-icon .wp-block-button a {
+  opacity: 1;
+  right: 16px;
+  top: 16px;
+}
+.wp-block-group.mighty-plumbers-shop a.wp-block-button__link.wp-element-button.wc-block-components-product-button__button:hover,
+.wp-block-group.mighty-plumbers-shop button.wp-block-button__link.wp-element-button.wc-block-components-product-button__button:hover {
+  background: var(--wp--preset--color--secondary);
+  border-color: var(--wp--preset--color--secondary);
+  color: #fff !important;
+}
+@media (max-width: 600px) {
+  .wp-block-navigation.mighty-plumbers-navigation ul {
+    grid-gap: 0;
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .wp-block-navigation.mighty-plumbers-navigation .wp-block-navigation-item__content.wp-block-navigation-item__content {
+    line-height: 30px;
+    padding: 0;
+  }
+  .mighty-plumbers-navigation.wp-block-navigation ul.wp-block-navigation__submenu-container.wp-block-navigation-submenu {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  .mighty-plumbers-navigation.wp-block-navigation ul.wp-block-navigation__submenu-container.wp-block-navigation-submenu .wp-block-navigation-item__content.wp-block-navigation-item__content:hover {
+    background-color: transparent;
+  }
+}
