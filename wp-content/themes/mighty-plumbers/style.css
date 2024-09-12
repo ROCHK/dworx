@@ -625,8 +625,8 @@ body.logged-in .wp-block-group.mighty-plumbers-sticky-menu.sticky-menu-enabled {
   width: 50px;
   height: 50px;
   background-color: #fff;
-  -webkit-mask-image: url(//wp-content/themes/mighty-plumbers/assets/images/up-arrow.svg);
-  mask-image: url(//wp-content/themes/mighty-plumbers/assets/images/up-arrow.svg);
+  -webkit-mask-image: url(/wp-content/themes/mighty-plumbers/assets/images/up-arrow.svg);
+  mask-image: url(/wp-content/themes/mighty-plumbers/assets/images/up-arrow.svg);
   mask-repeat: no-repeat;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
@@ -899,8 +899,8 @@ figure.wp-block-image.reviews-quote {
 }
 .wp-block-cover.mighty-plumbers-portfolio-box .wp-block-buttons.portfolio-more-icon .wp-block-button a:before {
   content: "";
-  -webkit-mask-image: url(//wp-content/themes/mighty-plumbers/assets/images/upward-arrow.svg);
-  mask-image: url(//wp-content/themes/mighty-plumbers/assets/images/upward-arrow.svg);
+  -webkit-mask-image: url(/wp-content/themes/mighty-plumbers/assets/images/upward-arrow.svg);
+  mask-image: url(/wp-content/themes/mighty-plumbers/assets/images/upward-arrow.svg);
   mask-repeat: no-repeat;
   mask-position: center center;
   -webkit-mask-repeat: no-repeat;
